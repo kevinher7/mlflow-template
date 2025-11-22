@@ -1,0 +1,14 @@
+.venv
+
+mlruns/
+mlruns.db
+mlflow-artifacts/
+
+__pycache__/
+.pytest_cache/
+
+.ipynb_checkpoints/
+
+.vscode/
+
+.env

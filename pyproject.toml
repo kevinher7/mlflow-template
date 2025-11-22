@@ -1,0 +1,21 @@
+[project]
+name = "ml-setup"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Kevin Hernandez",email = "kevinhernem@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "mlflow (>=3.1)",
+    "urllib3 (<2)",
+]
+
+[tool.poetry]
+packages = [{include = "ml_setup", from = "src"}]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

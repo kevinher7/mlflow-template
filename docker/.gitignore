@@ -1,0 +1,11 @@
+*.log
+*.tmp
+*.bak
+
+*.tar
+*.tar.gz
+*.tgz
+
+.env
+.env.*
+docker-compose.override.yaml
