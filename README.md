@@ -6,7 +6,7 @@ This is a template repo that contains a barebones structure for machine learning
 
 1. Fork the repo
 2. Run `poetry install` to get the base dependencies
-3. Use mlflow
+3. Use mlflow ui with `mlflow ui`
 
 # TODO
 
