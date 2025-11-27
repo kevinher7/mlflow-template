@@ -3,7 +3,7 @@ name = "ml-setup"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Kevin Hernandez",email = "kevinhernem@gmail.com"}
+    {name = "Kevin Hernandez", email = "kevinhernem@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.9"

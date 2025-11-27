@@ -9,16 +9,12 @@ Install `direnv` to load initial configuration environmental variables
 # Installation
 
 1. Clone the repo
-2. Execute `direnv allow` to load .envrc variables
-3. Change the project name in pyproject.toml
-4. Copy the dist.env into .env with `cp dist.env .env`
-
-Use `.env` to store secrets and `.direnv` to store setup related environmental variables
-
+2. Copy the dist.envr into .env with `cp dist.envrc .envrc`
+3. Execute `direnv allow` to load .envrc variables
+4. Change the project name in pyproject.toml
 5. Run `poetry install` to get the base dependencies (if the preivous step is done, then it also initializes a virtual environment in the repo)
-6. Use mlflow ui with `mlflow ui`
+6. Run the mlflow server with `docker-compose up -d` in the root directory. This will create a postgress database as the backend for cleaner storage of experiments.
 
 # TODO
 
-- Add docker compose for easy mlflow setup
 - Create some sort of poetry scripts?
