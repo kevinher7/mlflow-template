@@ -15,13 +15,38 @@ This is a template repo that contains a barebones structure for machine learning
 3. Copy env template: `cp dist.envrc .envrc`
 4. Load environment: `direnv allow`
 5. Install dependencies: `poetry install`
-6. Start MLFlow server: `docker-compose up -d`
+6. Setup pre-commit hooks (mostly auto formatting, useful when vibe coding): `pre-commit install`
+7. Start MLFlow server: `docker-compose up -d`
 
 # Development
+
+```bash
+make lint       # Lint and fix code
+make format     # Format code
+make typecheck  # Type check
+make test       # Run tests
+make all        # Run all checks
+```
+
+Or run tools directly:
 
 ```bash
 ruff check src/    # Lint code
 ruff format src/   # Format code
 ty check src/      # Type check
 pytest             # Run tests
+```
+
+# Project Structure
+
+```
+src/
+  project_name/
+    __init__.py
+    train.py       # Sample MLFlow training script
+tests/
+data/
+  raw/             # Raw data (gitignored by default)
+  processed/       # Processed data (gitignored by default)
+notebooks/
 ```
