@@ -12,6 +12,9 @@ dependencies = [
     "urllib3 (<2)",
 ]
 
+[project.scripts]
+train = "project_name.training.demo:demo"
+
 [tool.poetry]
 packages = [{include = "project_name", from = "src"}]
 package-mode = true
@@ -49,6 +52,7 @@ ignore = [
 "tests/*" = ["ANN"]
 
 [tool.ty.rules]
+possibly-missing-attribute = "ignore"
 unresolved-import = "warn"
 unresolved-attribute = "warn"
 division-by-zero = "warn"

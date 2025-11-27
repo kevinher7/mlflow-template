@@ -17,6 +17,9 @@ This is a template repo that contains a barebones structure for machine learning
 5. Install dependencies: `poetry install`
 6. Setup pre-commit hooks (mostly auto formatting, useful when vibe coding): `pre-commit install`
 7. Start MLFlow server: `docker-compose up -d`
+8. Run the test script via `poetry run demo`
+
+Once this is done you can visit `localhost:5000` to see the default experiment with the demo run.
 
 # Development
 
