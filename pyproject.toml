@@ -19,3 +19,37 @@ package-mode = true
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=6.0,<7.0)",
+    "pytest (>=8.0,<9.0)",
+    "ruff (>=0.14.6,<0.15.0)",
+    "ty (>=0.0.1a28,<0.0.2)"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "I",    # isort
+    "UP",   # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"tests/*" = ["ANN"]
+
+[tool.ty.rules]
+unresolved-import = "warn"
+unresolved-attribute = "warn"
+division-by-zero = "warn"
+invalid-assignment = "error"
+call-non-callable = "error"
