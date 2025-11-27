@@ -11,7 +11,7 @@ This is a template repo that contains a barebones structure for machine learning
 # Installation
 
 1. Clone the repo
-2. Run `./init.sh` and enter your project name (snake_case) to rename the package
+2. Run `./init.sh` and enter your project name (snake_case) to rename the package. You may need to give it executable permissions with `chmod +x init.sh`
 3. Copy env template: `cp dist.envrc .envrc`
 4. Load environment: `direnv allow`
 5. Install dependencies: `poetry install`
