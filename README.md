@@ -11,7 +11,7 @@ This is a template repo that contains a barebones structure for machine learning
 # Installation
 
 1. Clone the repo with `git clone --depth 1`. If necessay remove the .git folder and `git init` again to have a clean history.
-2. Run `./init.sh` and enter your project name (snake_case) to rename the package, create initial commit and remove origin. You may need to give it executable permissions with `chmod +x init.sh`
+2. Run `./init.sh` and enter your project name (snake_case) to rename the package, and create a new git history with an initial commit.
 3. Copy env template: `cp .dist.envrc .envrc`
 4. Load environment: `direnv allow`
 5. Install dependencies: `poetry install`
