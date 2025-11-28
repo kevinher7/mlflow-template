@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-train = "project_name.training.demo:demo"
+demo = "project_name.training.demo:train"
 
 [tool.poetry]
 packages = [{include = "project_name", from = "src"}]
