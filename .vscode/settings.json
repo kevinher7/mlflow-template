@@ -1,6 +1,9 @@
 {
     "python.analysis.extraPaths": ["./src"],
     "python.analysis.typeCheckingMode": "off",
+    "python.languageServer": "None",
     "python.defaultInterpreterPath": ".venv/bin/python",
     "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "ty.disableLanguageServices": false,
+    "ty.completions.autoImport": true,
 }
