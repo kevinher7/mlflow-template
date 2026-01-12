@@ -7,6 +7,8 @@ git mv src/project_name "src/$name"
 sed -i '' "s/project_name/$name/g" pyproject.toml
 sed -i '' "s/project_name/${name//_/-}/g" pyproject.toml
 
+sed -i '' "s/mlflow-network/${name//_/-}-network/g" docker-compose.yaml
+
 rm -rf .git
 git init
 git add .
